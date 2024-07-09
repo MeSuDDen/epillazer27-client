@@ -1,0 +1,25 @@
+.AdvantagesSection {
+  //@apply py-10 bg-darkGreen h-[100vh] w-[100vw] sm:h-auto sm:w-auto sm:flex sm:justify-center sm:items-center;
+  @apply py-10 bg-darkGreen;
+  .AdvantagesContainer {
+    .AdvantagesContainerFlex {
+      @apply flex flex-row flex-wrap gap-14
+    }
+    .AdvantagesContainerInner {
+      @apply flex gap-6;
+      & .AdvantagesDesignLine {
+        @apply bg-white w-[5px] h-full
+      }
+      .AdvantagesContent {
+        @apply bg-darkGreen;
+        .AdvantagesContainerTitle {
+          @apply text-xl font-bold text-white;
+        }
+        .AdvantagesContainerDescription {
+          @apply text-base pt-1 text-white;
+        }
+      }
+    }
+  }
+}
+

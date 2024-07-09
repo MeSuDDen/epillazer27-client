@@ -1,0 +1,12 @@
+.Contacts {
+	@apply pt-10 px-4 sm:px-14
+}
+.ContactsInner {
+	@apply flex justify-center gap-3 pb-10 sm:flex-nowrap flex-wrap w-full lg:flex-row flex-col lg:justify-between;
+	& .ContactsInfo {
+		@apply lg:w-2/4 w-full ;
+	}
+	& .ContactsForm {
+		@apply lg:w-2/4 w-full;
+	}
+}

@@ -1,0 +1,27 @@
+.ContactForm {
+  @apply w-full flex flex-col gap-2;
+}
+.ContactForm label input {
+  @apply w-full p-4 text-base;
+}
+.ContactForm label textarea {
+  @apply w-full p-4 text-base;
+}
+.ContactForm .checkbox {
+  @apply flex gap-2;
+}
+.ContactForm .checkbox .CheckBoxInput {
+  @apply min-w-0 w-5;
+}
+.ContactForm button {
+  @apply w-full;
+}
+.ContactForm .ErrorText {
+  @apply text-red-600;
+}
+
+.ContactsFormTitle {
+  @apply text-xl text-center font-bold pb-5;
+}
+
+/*# sourceMappingURL=ContactsFormForSMTP.module.css.map */

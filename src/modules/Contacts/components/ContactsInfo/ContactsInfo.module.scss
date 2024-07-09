@@ -1,0 +1,26 @@
+.ContactsInfoInner {
+	& .ContactsInfoTitle {
+		@apply text-xl font-bold pb-5 text-left;
+	}
+	& .ContactsInfoDesc {
+		@apply pb-5 font-light;
+	}
+	& .ContactsInfoDescBottom {
+		@apply pt-5 font-light;
+	}
+}
+.ContactsInfoContainer {
+	@apply flex flex-col gap-3;
+	& .ContactsInfoBox {
+		@apply flex items-center;
+		& div {
+			@apply ml-2;
+			& span {
+				@apply font-bold text-darkGray;
+			}
+			& a {
+				@apply hover:text-darkGreen transition-all text-mainLight underline;
+			}
+		}
+	}
+}

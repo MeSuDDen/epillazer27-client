@@ -1,0 +1,27 @@
+.ContactForm {
+	@apply w-full flex flex-col gap-2;
+	& label {
+		& input {
+			@apply w-full p-4 text-base;
+		}
+		& textarea {
+			@apply w-full p-4 text-base;
+		}
+	}
+	& .checkbox {
+		@apply flex gap-2;
+		& .CheckBoxInput {
+			@apply min-w-0 w-5
+		}
+	}
+
+	& button {
+		@apply w-full;
+	}
+	& .ErrorText {
+		@apply text-red-600;
+	}
+}
+.ContactsFormTitle {
+	@apply text-xl text-center font-bold pb-5;
+}

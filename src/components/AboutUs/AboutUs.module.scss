@@ -1,0 +1,12 @@
+.AboutUsSection {
+  @apply py-10;
+
+  .AboutUsContentInner {
+    img {
+      @apply w-full
+    }
+  }
+  .AboutUsContentText p {
+    @apply text-base
+  }
+}
