@@ -12,11 +12,12 @@ import {
 	FaPhone,
 	FaTelegram,
 } from 'react-icons/fa6'
+import Title from "@/components/UI/Title/Title";
 export default function Contacts() {
 	return (
-		<div className={style.ContactsBlock}>
+		<div className={"h-full"}>
 			<div className={style.ContactsContainer}>
-				<h2>Контакты</h2>
+				<h1 className={"text-darkGreen text-2xl font-extrabold pb-6 sm:text-3xl"}>Контакты</h1>
 				<div className={style.ContactsInner}>
 					<div className={style.left_block}>
 						<div className={style.AddressBlock}>
@@ -29,7 +30,7 @@ export default function Contacts() {
 								target='_self'
 								rel='noopener noreferrer'
 								title='Контакты'>
-								<span>г. Хабаровск ул.Карла-Маркса 122б (410к.)</span>
+								<span className={"text-sm sm:text-base"}>г. Хабаровск ул.Карла-Маркса 122б (410к.)</span>
 							</Link>
 						</div>
 
@@ -39,7 +40,7 @@ export default function Contacts() {
 								<span>Телефон:</span>
 							</div>
 							<Link href={'tel:+79143111754'}>
-								<span>+7 (914) 311-17-54</span>
+								<span className={"text-sm sm:text-base"}>+7 (914) 311-17-54</span>
 							</Link>
 						</div>
 					</div>
@@ -56,7 +57,7 @@ export default function Contacts() {
 								rel='noopener noreferrer'
 								title='Контакты'
 							>
-								<span>
+								<span className={"text-sm sm:text-base"}>
 									пн-пт: 7:00 - 20:00
 									<br />
 									сб-вс: 7:00 - 20:00

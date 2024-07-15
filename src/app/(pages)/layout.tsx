@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Layout from "@/components/Layout/Layout";
+import Footer from "@/components/Footer/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -14,7 +15,8 @@ export default function RootLayout({children}: Readonly<{children: React.ReactNo
   return (
     <html lang="ru">
       <body className={inter.className}>
-          {children}
+        {children}
+        <Footer/>
       </body>
     </html>
   );

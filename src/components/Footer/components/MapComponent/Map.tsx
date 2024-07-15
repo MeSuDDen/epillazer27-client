@@ -1,5 +1,6 @@
 'use client'
 
+import React from 'react'
 import {
 	GeolocationControl,
 	Map,
@@ -8,8 +9,11 @@ import {
 	ZoomControl,
 } from '@pbe/react-yandex-maps'
 
-export default function YandexMap({height}) {
+interface YandexMapProps {
+	height: string
+}
 
+const YandexMap: React.FC<YandexMapProps> = ({ height }) => {
 	const mapState = {
 		center: [48.499092, 135.102558],
 		zoom: 17,
@@ -22,13 +26,13 @@ export default function YandexMap({height}) {
 		hintContent: 'Нажмите для подробностей',
 		balloonContentHeader: 'Epillazer',
 		balloonContentBody: `
-        ул. Карла-Маркса 122б, 3 этаж, к. 410
-        Студия лазерной эпиляции
-        Пн-Пт с 10:00 до 19:00,
-        Сб с 10:00 до 18:00, Вс выходной
-        +7 (4212) 677-000, +7 (909) 824-7000
-        dveriland@list.ru
-      `,
+      ул. Карла-Маркса 122б, 3 этаж, к. 410
+      Студия лазерной эпиляции
+      Пн-Пт с 10:00 до 19:00,
+      Сб с 10:00 до 18:00, Вс выходной
+      +7 (4212) 677-000, +7 (909) 824-7000
+      dveriland@list.ru
+    `,
 	}
 
 	return (
@@ -63,3 +67,5 @@ export default function YandexMap({height}) {
 		</div>
 	)
 }
+
+export default YandexMap
