@@ -1,0 +1,68 @@
+.ContactsContainer {
+  @apply flex flex-col h-full gap-[50px] items-center justify-center lg:justify-start lg:pb-0 pb-5 lg:items-start;
+}
+.ContactsContainer h2 {
+  @apply text-darkGreen font-extrabold lg:text-4xl text-3xl;
+}
+.ContactsContainer .ContactsInner {
+  @apply flex flex-row w-auto lg:w-full;
+}
+.ContactsContainer .ContactsInner a svg {
+  @apply mr-2;
+}
+
+.AddressBlock {
+  @apply max-w-[240px];
+}
+.AddressBlock .AddressBlock__title {
+  text-wrap: nowrap;
+  @apply font-bold text-base mb-2 flex items-center;
+}
+.AddressBlock .AddressBlock__title span {
+  text-wrap: nowrap;
+  @apply ml-1;
+}
+.AddressBlock a:hover {
+  @apply transition-all;
+}
+.AddressBlock a:hover svg path {
+  @apply transition-all;
+  fill: #c29870;
+}
+.AddressBlock a:hover span {
+  @apply text-black underline transition-all;
+}
+.AddressBlock a span {
+  @apply font-light text-[#999];
+}
+
+.Line {
+  @apply bg-[#143D3D] w-[50px] h-[2px];
+}
+
+.PhoneBlock {
+  @apply mt-5;
+}
+
+.right_block {
+  @apply pl-10 sm:pl-28;
+}
+
+.BtnLine {
+  @apply flex gap-[25px] items-center;
+}
+
+.flexSocials {
+  @apply flex;
+}
+
+@media (max-width: 420px) {
+  .ContactsInner {
+    @apply block;
+  }
+  .right_block {
+    @apply p-0;
+  }
+}
+
+/*# sourceMappingURL=Contacts.module.css.map */

@@ -3,8 +3,8 @@ import style from "./Layout.module.scss";
 
 export default function Layout({ children } : PropsWithChildren) {
     return (
-        <main className={style.layout}>
+        <div className={style.layout}>
             {children}
-        </main>
+        </div>
     )
 }

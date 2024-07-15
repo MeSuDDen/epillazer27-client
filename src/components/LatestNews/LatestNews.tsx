@@ -7,9 +7,9 @@ import Layout from "@/components/Layout/Layout";
 
 export default function LatestNews() {
     return (
-        <div className={style.NewsContainer}>
+        <section className={style.NewsContainer}>
             <Layout>
-                <Title white={false}>Последнии новости</Title>
+                <Title white={false}>Последние новости</Title>
 
                 <div className={style.NewsInner}>
                     <Slider />
@@ -19,6 +19,6 @@ export default function LatestNews() {
                     <ButtonToNews>Смотреть все новости</ButtonToNews>
                 </div>
             </Layout>
-        </div>
+        </section>
     )
 }

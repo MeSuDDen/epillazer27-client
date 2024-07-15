@@ -1,0 +1,8 @@
+.FooterNav {
+  @apply gap-[20px] items-center justify-between xl:gap-[50px] lg:flex hidden;
+}
+.FooterNav a {
+  @apply text-darkGreen font-bold text-sm hover:text-black hover:underline transition-all;
+}
+
+/*# sourceMappingURL=FooterNav.module.css.map */

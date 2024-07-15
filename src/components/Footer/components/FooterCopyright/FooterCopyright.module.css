@@ -1,0 +1,8 @@
+.FooterCopyright {
+  @apply flex flex-col items-end text-sm;
+}
+.FooterCopyright a {
+  @apply underline;
+}
+
+/*# sourceMappingURL=FooterCopyright.module.css.map */
